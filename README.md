@@ -32,7 +32,7 @@ cercetatori au propus diferite secvente :
  
 Atunci cand gapul ajunge la dimensiunea 1, complexitatea devine O(n)
 
-![](exemplu.png)
+![](/image/exemplu.png)
 
 Unul dintre cazurile defavorabile este considerat atunci cand cele mai mici
 elemente sunt in pozitii ciudate, iar cele mai mari in pozitii egale
@@ -62,7 +62,7 @@ tiile si schimburile sa se faca una cate una, reteaua este paralela. Acest lucru
 imbunatateste considerabil complexitatea Linia verticala indica comparatorul,
 iar sageata indica directia. Acest algoritm este unul dintre cel mai rapid din
 
-![](doi.png)
+![](/image/doi.png)
 clasa celor de complexitate secventiala O(n2). Viteza este aproximativ de 5 ori
 mai mare decat sortarea prin metoda bulelor si de peste doua ori mai mare de-
 cat metoda de sortare prin insertie. Este mai lent in comparatie cu metoda de
@@ -70,9 +70,9 @@ sortare rapida sau cea Heap. Simplitatea acestuia il face sa fie folosit atunci 
 se doreste sortarea repetata a unor vectori de dimensiune moderata. Nu este o
 metoda stabila deoarece performanta depinde de alegerea secventei.
 
-![](running_time.png)
+![](/image/running_time.png)
 
-![](complexity.png)
+![](/image/complexity.png)
 
 # Counting Sort
 
@@ -91,7 +91,7 @@ Algoritmul este eficace atunci cand range-ul nu este mai mare decat numarul
 elemntelor. Nu are o complexitate bazata pe comparatie. Acesta este avantajos
 atunci cand stim range of elements si daca elementele sunt integers.
 
-![](complexity2.png)
+![](/image/complexity2.png)
 
 
 1. Time Complexity : O(n + k), k = max - min + 1
@@ -110,13 +110,13 @@ float m-am gandit ca o posibila solutie ar fi sa imultesc fiecare
 numar cu error = 108 pentru a le transforma in inturi. Pentru numere negative
 solutia ar fi fost sa imultesc valoarea cu -1.
 
-![](10.png)
+![](/image/10.png)
 
-![](optimizare.png)
+![](/image/optimizare.png)
 
-![](history.png)
+![](/image/history.png)
 
-![](11.png)
+![](/image/11.png)
 
 
 # Comb Sort
@@ -171,8 +171,8 @@ Teste si algoritmii au fost creeate folosind Visual Studio Code 1.30.0. Am testa
 de inputuri 10^3, 2 * 10^3, 10^4,2 * 10^4, 10^4, 10^5, 2 * 10^5, 10^6, 10^4 deja ordonat, 10^4
 ordonat descrescator. Testul 0 contine 4 int-uri.
 
-![](final.png)
-![](final2.png)
+![](/image/final.png)
+![](/image/final2.png)
 
 # Concluzii
 1. Din punct de vedere al numarului de iteratii
