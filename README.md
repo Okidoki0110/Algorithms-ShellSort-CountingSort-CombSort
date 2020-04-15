@@ -11,3 +11,6 @@ CountingSort.
 Performanta algoritmilor este data de timpul de rulare, cat si de memoria uti-
 lizata. In mod normal se folosesc doua metode de analiza si anume cea analitica
 si cea empirica.
+
+
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
