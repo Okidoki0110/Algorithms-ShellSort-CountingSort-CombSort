@@ -160,8 +160,7 @@ Pentru verificarea testelor precizate anterior, se folosec : programul Test in c
 caruia se primeste inputul si compara fisierul de out de referinta si in urma
 caruia afiseaza "Test PASSED" sau "Test FAILED". Fisierele ALGO.CPP core-
 spunde implementarii algoritmului Shell Sort, ALGO2.CPP pentru Counting
-Sort, ALGO3.CPP pentru Comb Sort. ALGO.H este header-ul ce contine deni-
-tiile algoritmilor prezentati. Makefile - ul contine o regula de build care va genera
+Sort, ALGO3.CPP pentru Comb Sort. ALGO.H este header-ul ce contine definitiile algoritmilor prezentati. Makefile - ul contine o regula de build care va genera
 un fisier obiect algo.o, cu implementarea functiilor din algo.h. Altfel, pasii pentru
 testarea algoritmilor sunt :
 
@@ -174,3 +173,47 @@ ordonat descrescator. Testul 0 contine 4 int-uri.
 
 ![](final.png)
 ![](final2.png)
+
+# Concluzii
+1. Din punct de vedere al numarului de iteratii
+{ Testul 1 contine 103 inturi se observa ca algoritmul Counting are cele mai
+multe iteratii, acest lucru se datoreaza faptului ca el foloseste acel vector
+auxiliar, iteratiile sunt innumarate incepand cu alocarea, adunarea cat si
+atunci cand creez vectorul sortat. Este un algoritm stabil, acest lucru pre-
+supune ca atunci cand avem doua valori egale in vectorul care urmeaza a 
+sortat ele sunt puse pe in ordinea in care se gasesc initial
+{ Shell Sortul are un numar mai mic de iteratii decat Comb Sort, deoarece
+alegerea gapului si complexitatea este mai buna.
+{ Pentru un input din ce in ce mai mare numarul de iteratii nu creste la fel
+de repede la Counting fata de celelalte deoarece scaleaza mai bine.
+{ Se observa ca din acest punct de vedere cel mai bun algoritm este Shell
+Sortul.
+2. Din punctul de vedere al timpului de executie
+{ Shell Sort are timpul cel mai mare
+{ Counting Sort este cel mai bun din acest punct de vedere, din cauza com-
+plexitatii
+
+Nu pot spune ca unu algoritm este mai bun decat celalalt, depinde de ceea ce
+avem de facut si de ceea ce vrem sa obtinem. Tipul de date ar reprezenta un alt
+criteriu de alegere. Daca dorim un timp mai bun alegem Counting Sort, insa nu
+il putem alege pentru inturi foarte mari caci va da crash in cazul implementarii
+facute.
+Shell Sort si Comb Sort, deoarece au la baza doi algoritmi esential in sortare
+Insertion Sort si Bubble Sort, a caror complexitate ar putea  considerata la fel
+in unele cazuri, se observa ca au o evolutie aproximativ la fel
+In urma acestei lucrari, pot spune ca un pas important in alegerea unei sortari
+este ceea ce vrem sa obtinem. Vrem un vector sortat intr-un numar de iteratii
+mai mic sau vrem un timp mai bun?
+
+
+# Referinte
+1. Hackerearth, https://www.hackerearth.com/practice/algorithms/sorting/counting-
+sort/tutorial/
+2. Enhanced Shell Sorting Algorithm, https://waset.org/publications/4459/enhanced-
+shell-sorting-algorithm-
+3. Shell sort improvement, https://apps.dtic.mil/dtic/tr/fulltext/u2/740110.pdf?
+4. Comb Sort, https://codereview.stackexchange.com/questions/105490/counting-
+sort-in-python
+5. Counting Sort, https://stackover
+ow.com/questions/45489527/what-is-k-in-
+counting-sort-onk-time-complexity
