@@ -11,6 +11,6 @@ CountingSort.
 Performanta algoritmilor este data de timpul de rulare, cat si de memoria uti-
 lizata. In mod normal se folosesc doua metode de analiza si anume cea analitica
 si cea empirica.
-```
-![](https://www.codecogs.com/latex/eqneditor.php)
-```
+
+![equation](https://www.codecogs.com/latex/eqneditor.php)
+
