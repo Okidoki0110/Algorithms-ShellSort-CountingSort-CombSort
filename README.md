@@ -12,5 +12,5 @@ Performanta algoritmilor este data de timpul de rulare, cat si de memoria uti-
 lizata. In mod normal se folosesc doua metode de analiza si anume cea analitica
 si cea empirica.
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i +\pi} =x+1">
+<img src="https://render.githubusercontent.com/render/math?math=[\frac{n}{2}], [\frac{n}{4}], [\frac{n}{8}] ... 1">
 
