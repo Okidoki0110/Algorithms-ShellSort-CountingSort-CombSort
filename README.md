@@ -119,4 +119,58 @@ solutia ar fi fost sa imultesc valoarea cu -1.
 ![](11.png)
 
 
+# Comb Sort
 
+Descoperit de catre Stephen Lacey si Richard Box in 1991, este o imbunatatire
+a algoritmului Bubble Sort. Acesta utilizeaza salturi mai mari decat 1, deobicei
+consideram primul gap o valoare mare, apoi scade cu 1,3 pana ajunge la 1. Pentru
+ultima valoare se aplica Bubble Sort.
+
+![](comb.png)
+1. Avantaje
+  - Este adecvat pentru seturi de date compuse e din numere, e din siruri
+de caractere
+  - Complexitatea timpului este foarte buna, poate  comparata cu cea de la
+algoritmul Quick Sort
+  - Nu are apeluri de functii recursive
+  - In-place-sorting
+
+2. Dezavantaje
+  - Trebuie sa redimensionate salturile cu o diviziune de 1.3, ceea ce reprezinta
+o fractiune.
+  - Best Case : O(n)
+  - Average Case: O(n * log n)
+  - Worst Case : O(n^2)
+  - Nu este stabil
+  
+  
+# Evaluarea solutiilor
+
+Algoritmii prezentati anterior au fost analizati din punct de vedere al timpului
+de executie, cat si din punct de vedere al numarului de iteratii facute. Am folosit
+diferite dimensiuni ale datelor de intrare, astfel ca testele ce ajuta la analiza
+contin de la 4 pana la 100000 de elemente.
+Testele au fost generate in cadrul programului "Random.c", din directorul IN
+care genereaza random n cifre de tip int. Primele 7 teste contin elemente din
+ce in ce mai multe. Testul 8 cotine elemente deja sortate, testul 9 este contine
+inturi sortate descrescator. In directorul OTHER TEST sunt numere sortate e
+ascendent, fie descentent pana la o anumita valoare, apoi se continua cu o con-
+stanta.
+Pentru verificarea testelor precizate anterior, se folosec : programul Test in cadrul
+caruia se primeste inputul si compara fisierul de out de referinta si in urma
+caruia afiseaza "Test PASSED" sau "Test FAILED". Fisierele ALGO.CPP core-
+spunde implementarii algoritmului Shell Sort, ALGO2.CPP pentru Counting
+Sort, ALGO3.CPP pentru Comb Sort. ALGO.H este header-ul ce contine deni-
+tiile algoritmilor prezentati. Makefile - ul contine o regula de build care va genera
+un fisier obiect algo.o, cu implementarea functiilor din algo.h. Altfel, pasii pentru
+testarea algoritmilor sunt :
+
+1. make
+2. ./tema (numarul testului) (numarul algoritmului)
+
+Teste si algoritmii au fost creeate folosind Visual Studio Code 1.30.0. Am testat doar date de tip int. Testele contin incepand de la 1 la 9 numarul
+de inputuri 10^3, 2 * 10^3, 10^4,2 * 10^4, 10^4, 10^5, 2 * 10^5, 10^6, 10^4 deja ordonat, 10^4
+ordonat descrescator. Testul 0 contine 4 int-uri.
+
+![](final.png)
+![](final2.png)
